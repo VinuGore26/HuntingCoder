@@ -27,17 +27,17 @@
 }
 
 .heading {
-  font-size: 4rem;
+  font-size: 4.5rem;
   padding: 2rem;
 }
 
-.center::before {
+/* .center::before {
   background: var(--secondary-glow);
   border-radius: 50%;
   width: 480px;
   height: 360px;
   margin-left: -400px;
-}
+} */
 
 .center::after {
   background: var(--primary-glow);
@@ -46,7 +46,6 @@
   z-index: -1;
 }
 
-.center::before,
 .center::after {
   content: "";
   left: 50%;
@@ -61,7 +60,7 @@
 }
 
 .blogItem {
-  padding: 2rem 10rem;
+  padding: 10px 10rem;
 }
 
 .para {
