@@ -32,7 +32,7 @@
 }
 
 /* .center::before {
-  background: var(--secondary-glow);
+  background: red;
   border-radius: 50%;
   width: 480px;
   height: 360px;
@@ -40,7 +40,7 @@
 } */
 
 .center::after {
-  background: var(--primary-glow);
+  background: rgb(157, 212, 252);
   width: 240px;
   height: 180px;
   z-index: -1;
@@ -55,7 +55,7 @@
 }
 
 .blogs {
-  padding: 2rem;
+  padding: 0 2rem;
   margin: 2rem;
 }
 
@@ -63,10 +63,16 @@
   padding: 10px 10rem;
 }
 
-.para {
-  padding: 0 1rem;
+.headLine {
+  padding: 1rem 0;
 }
 
-.headLine {
-  padding: 1rem;
+.para {
+  font-size: 15px;
+}
+
+.img {
+  width: 500px;
+  height: 300px;
+  margin: 20px;
 }

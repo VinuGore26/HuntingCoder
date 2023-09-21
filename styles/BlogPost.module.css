@@ -1,0 +1,18 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.blogItem {
+  padding: 10px 15rem;
+}
+
+.para {
+  font-size: 15px;
+}
+
+

@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import styles from "@/styles/Home.module.css";
 
-const about = () => {
+const blog = () => {
   return (
-    <div>
-      <h1>This is an Blog page.</h1>
-    </div>
-  )
-}
+    <>
+      <main className={styles.main}>
+        <h1>This is an Blog page.</h1>
+      </main>
+    </>
+  );
+};
 
-export default about
+export default blog;

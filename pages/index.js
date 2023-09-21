@@ -1,10 +1,7 @@
 import Head from "next/head";
-// import Image from 'next/image'
+import Image from "next/image";
 import Link from "next/link";
-import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -15,47 +12,41 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className={`${styles.nav} ${inter.className}`}>
-        <ul>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/blog">Blogs</Link>
-          </li>
-          <li>
-            <Link href="/services">Services</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contacts</Link>
-          </li>
-        </ul>
-      </nav>
-      <main className={`${styles.main} ${inter.className}`}>
+      <main className={styles.main}>
         <div className={styles.center}>
           <h1 className={styles.heading}>Hunting Coder !</h1>
           <p className={styles.para}>
-            A blog by a hunting coders by a hunting coder.
+            A blog for a hunting coders by a hunting coder.
           </p>
-          {/* <Image src={images.}></Image> */}
+          <Image
+            src="/img.png"
+            width={800}
+            height={500}
+            className={styles.img}
+          />
         </div>
         <div className={styles.blogs}>
+          <h2 className={styles.blogItem}>Latest Blogs</h2>
           <div className={styles.blogItem}>
-            <h2 className={styles.headLine}>How to learn Javascript in 2023</h2>
+            <Link href={'/blogPost/learn-javasvript'}>
+              <h3 className={styles.headLine}>
+                How to learn Javascript in 2023
+              </h3>
+            </Link>
             <p className={styles.para}>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
               quidem impedit sed reprehenderit, praesentium illo obcaecati?
             </p>
           </div>
           <div className={styles.blogItem}>
-            <h2 className={styles.headLine}>How to learn Javascript in 2023</h2>
+            <h3 className={styles.headLine}>How to learn Javascript in 2023</h3>
             <p className={styles.para}>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
               quidem impedit sed reprehenderit, praesentium illo obcaecati?
             </p>
           </div>
           <div className={styles.blogItem}>
-            <h2 className={styles.headLine}>How to learn Javascript in 2023</h2>
+            <h3 className={styles.headLine}>How to learn Javascript in 2023</h3>
             <p className={styles.para}>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
               quidem impedit sed reprehenderit, praesentium illo obcaecati?
