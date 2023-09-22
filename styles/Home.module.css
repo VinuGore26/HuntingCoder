@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
@@ -29,29 +29,6 @@
 .heading {
   font-size: 4.5rem;
   padding: 2rem;
-}
-
-/* .center::before {
-  background: red;
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
-} */
-
-.center::after {
-  background: rgb(157, 212, 252);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
-}
-
-.center::after {
-  content: "";
-  left: 50%;
-  position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
 }
 
 .blogs {
